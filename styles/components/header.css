@@ -1,0 +1,40 @@
+.cabecalho {
+  background: #000;
+}
+.cabecalho .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+}
+
+.cabecalho .navBar div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.cabecalho .navBar .menu__principal ul {
+  display: flex;
+  justify-content: space-between;
+}
+.cabecalho .navBar .menu__principal ul li .menu__link {
+  padding: 15px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.buscador input {
+  height: 38px;
+  padding: 10px;
+}
+
+.buscador button {
+  height: 38px;
+  padding: 9px 12px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
