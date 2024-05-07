@@ -1,0 +1,58 @@
+.banner{
+    margin: 0;
+    height: 415px;
+}
+
+.banner__container {
+    width: 100vw;
+    position: relative;
+}
+
+.gallery__wrapper {
+    overflow-x: hidden;
+}
+
+.gallery__wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.seta__esquerda, .seta__direita {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    width: 70px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    opacity: 0;
+    transition: all 600ms ease-in-out;
+}
+
+.seta__esquerda:hover {
+    opacity: 1;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+}
+
+.seta__direita {
+    left: auto;
+    right: 0;
+}
+
+.seta__direita:hover {
+    opacity: 1;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.item {
+    width: 100vw;
+    height: 415px;
+    flex-shrink: 0;
+}
