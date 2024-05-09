@@ -1,0 +1,68 @@
+.secao__produtos {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.secao__produtos div h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38.73px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.produto {
+    width: 350px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 13%);
+}
+
+.produto img {
+    width: 350px;
+    height: 422px;
+}
+
+.produto h3 {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 700;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+.produto p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 0 10px;
+    margin: 0 0 15px 0;
+}
+
+.produto span {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.produto button {
+    margin-left: 10px;
+    width: 30%;
+    padding: 9px 16px;
+    border: none;
+    background-color: #9353FF;
+    color: #fff;
+    cursor: pointer;
+}
