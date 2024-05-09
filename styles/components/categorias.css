@@ -12,21 +12,32 @@ h2 {
     font-size: 32px;
     line-height: 38.73px;
     margin-bottom: 30px;
+    margin-top: 80px;
 }
 
 .categorias {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-
 }
 
 .categoria__produtos {
+    display: flex;
+    flex-direction: column;
     width: 160px;
     height: 192px;
+}
 
+.categoria__produtos, img {
+    height: 157px;
+    width: 160px;
 }
 
 .categoria__titulo {
     background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px 16px 8px 16px;
+    margin: 0;
 }
