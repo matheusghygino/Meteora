@@ -1,58 +1,59 @@
-.banner{
-    margin: 0;
+.container__banner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container__banner div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
     height: 415px;
 }
 
-.banner__container {
-    width: 100vw;
-    position: relative;
-}
-
-.gallery__wrapper {
-    overflow-x: hidden;
-}
-
-.gallery__wrapper::-webkit-scrollbar{
-    display: none;
-}
-
-.galeria {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-}
-
-.seta__esquerda, .seta__direita {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: auto;
-    width: 70px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
+.slider {
     opacity: 0;
-    transition: all 600ms ease-in-out;
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+    height: 415px;
 }
 
-.seta__esquerda:hover {
+.on {
     opacity: 1;
-    background: linear-gradient(to left, transparent 0%, black 200%);
 }
 
-.seta__direita {
+#prev-btn, #next-btn {
+    width: 70px;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: auto;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 600ms ease-in-out;
+    text-align: center;
+    opacity: 0;
+}
+
+#next-btn {
     left: auto;
     right: 0;
 }
 
-.seta__direita:hover {
+#prev-btn:hover {
     opacity: 1;
-    background: linear-gradient(to right, transparent 0%, black 200%);
+    background: linear-gradient(to left, transparent 0%, black 200%);
 }
 
-.item {
-    width: 100vw;
-    height: 415px;
-    flex-shrink: 0;
+#next-btn:hover {
+    opacity: 1;
+    background: linear-gradient(to right, transparent 0%, black 200%);
 }

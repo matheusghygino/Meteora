@@ -1,0 +1,32 @@
+.busque__por__categoria {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.busque__por__categoria,
+h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38.73px;
+    margin-bottom: 30px;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+}
+
+.categoria__produtos {
+    width: 160px;
+    height: 192px;
+
+}
+
+.categoria__titulo {
+    background-color: #000;
+}

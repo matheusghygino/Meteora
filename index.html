@@ -31,19 +31,45 @@
         </div>
     </header>
     <section class="banner">
-        <div class="banner__container">
-            <button class="seta__esquerda control" area-label="Imagem anterior"></button>
-            <div class="gallery__wrapper">
-                <div class="galeria">
-                    <img src="./assets/images/banner/Banner-carousel-1_ 1440.png" alt="Moda impacto Positivo" class="item item__atual">
-                    <img src="./assets/images/banner/Banner carousel 2 _ 1440.png" alt="Coleção Atemporal" class="item">
-                    <img src="./assets/images/banner/Banner carousel 3 _ 1440.png" alt="Coleção Atemporal 2" class="item">
-                </div>
+        <div class="container__banner">
+            <div class="container__images">
+                <img src="assets/images/banner/Banner-carousel-1_ 1440.png" alt="" class="slider on">
+                <img src="assets/images/banner/Banner carousel 2 _ 1440.png" alt="" class="slider">
+                <img src="assets/images/banner/Banner carousel 3 _ 1440.png" alt="" class="slider">
             </div>
-            <button class="seta__direita control" area-label="Próxima imagem"></button>
+            <button id="prev-btn"></button>
+            <button id="next-btn"></button>
         </div>
     </section>
-
+    <section class="container busque__por__categoria">
+        <h2>Busque por categoria:</h2>
+        <div class="categorias">
+            <div class="categoria__produtos">
+                <div><img src="./assets/images/categoria/Categoria camiseta.png" alt="camisetas"></div>
+                <div class="categoria__titulo"><p>Camisetas</p></div>
+            </div>
+            <div class="categoria__produtos">
+                <div><img src="./assets/images/categoria/image.png" alt="bolsas"></div>
+                <div class="categoria__titulo"><p>Bolsas</p></div>
+            </div>
+            <div class="categoria__produtos">
+                <div><img src="./assets/images/categoria/image-1.png" alt="calçados"></div>
+                <div class="categoria__titulo"><p>Calçados</p></div>
+            </div>
+            <div class="categoria__produtos">
+                <div><img src="./assets/images/categoria/image-2.png" alt="calças"></div>
+                <div class="categoria__titulo"><p>Calças</p></div>
+            </div>
+            <div class="categoria__produtos">
+                <div><img src="./assets/images/categoria/image-3.png" alt="casacos"></div>
+                <div class="categoria__titulo"><p>Casacos</p></div>
+            </div>
+            <div class="categoria__produtos">
+                <div><img src="./assets/images/categoria/image-4.png" alt="óculos"></div>
+                <div class="categoria__titulo"><p>Óculos</p></div>
+            </div>
+        </div>
+</section>
     <script type="module" src="./js/script.js"></script>
 </body>
 
