@@ -5,6 +5,7 @@
 @import url(./components/categorias.css);
 @import url(./components/produtos.css);
 @import url(./components/facilidades.css);
+@import url(./components/newsletter.css);
 
 * {
   font-family: "Inter", sans-serif;
