@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .cabecalho .navBar .menu__principal ul li .menu__link {
   padding: 15px;
   line-height: 23px;
@@ -42,11 +43,15 @@
   cursor: pointer;
 }
 
+.off__menu__hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 1046px) {
   .cabecalho .navBar {
     justify-content: space-between;
   }
-  
+
   .cabecalho .navBar div {
     gap: 5px;
   }
@@ -74,4 +79,101 @@
   .buscador button {
     width: auto;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .menu__principal {
+    display: none;
+  }
+
+  .buscador, .buscador input, .buscador button {
+    display: none;
+  }
+
+  .menu__hamburger {
+    height: 25px;
+    width: 25px;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .menu__hamburger span{
+    height: 3px;
+    width: 100%;
+    background-color: #DAFF01;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: .4s ease;
+    z-index: 2;
+  }
+
+  .menu__hamburger span:nth-child(1) {
+    top: 25%;
+  }
+
+  .menu__hamburger span:nth-child(3) {
+    top: 75%;
+  }
+
+  .menu__hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .menu__hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu__hamburger.active span:nth-child(3) {
+    top: 40%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+  }
+
+  .off__menu__hamburger {
+    z-index: 1;
+    background-color: #343A40;
+    height: 217px;
+    width: 170px;
+    right: -5000px  ;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: .4s ease;
+  }
+
+  .off__menu__hamburger.active {
+    right: 0;
+  }
+
+  .off__menu__hamburger ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 190px;
+    justify-content: space-between;
+    margin-top: 65px;
+  }
+
+  .off__menu__hamburger ul li {
+    border-bottom: 1px solid #CED4DA;
+    padding-bottom: 10px;
+    margin: -10px 20% 0 0;  
+  }
+
+  .off__menu__hamburger ul li:last-child {
+    border: none;
+  }
+
+  .off__menu__hamburger ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+
 }
