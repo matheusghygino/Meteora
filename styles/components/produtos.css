@@ -28,10 +28,17 @@
     border: 1px solid rgba(0, 0, 0, 13%);
 }
 
+@media screen and (max-width: 1046px) {
+    .produto {
+        width: 330px;
+    }
+}
+
 .produto img {
-    width: 350px;
     height: 422px;
 }
+
+
 
 .produto h3 {
     font-size: 16px;
