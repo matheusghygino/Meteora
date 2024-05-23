@@ -1,11 +1,13 @@
 .cabecalho {
   background: #000;
 }
+
 .cabecalho .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 58px;
+  box-sizing: border-box;
 }
 
 .cabecalho .navBar div {
@@ -13,6 +15,7 @@
   align-items: center;
   gap: 15px;
 }
+
 .cabecalho .navBar .menu__principal ul {
   display: flex;
   justify-content: space-between;
@@ -37,4 +40,38 @@
   color: #fff;
   border: 1px solid #fff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1046px) {
+  .cabecalho .navBar {
+    justify-content: space-between;
+  }
+  
+  .cabecalho .navBar div {
+    gap: 5px;
+  }
+
+  .cabecalho .navBar div a img {
+    width: 99.86px;
+    margin: 0;
+  }
+
+  .cabecalho .navBar .menu__principal ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .cabecalho .navBar .menu__principal ul li .menu__link {
+    line-height: 20px;
+    font-size: 13px;
+  }
+
+  .buscador input {
+    width: 160px;
+  }
+
+  .buscador button {
+    width: auto;
+  }
 }

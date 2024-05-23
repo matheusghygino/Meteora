@@ -6,12 +6,19 @@
 @import url(./components/produtos.css);
 @import url(./components/facilidades.css);
 @import url(./components/newsletter.css);
+@import url(./components/footer.css);
 
 * {
   font-family: "Inter", sans-serif;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 90%;
   margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 1046px) {
+    .container {
+      max-width: 94%;
+    }
+}

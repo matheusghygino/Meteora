@@ -25,6 +25,12 @@
     gap: 32px;
 }
 
+@media screen and (max-width: 1046px) {
+    .categorias {
+        justify-content: space-around;
+    }
+}
+
 .categoria__produtos {
     display: flex;
     flex-direction: column;
