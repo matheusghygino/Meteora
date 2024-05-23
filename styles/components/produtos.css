@@ -29,6 +29,10 @@
 }
 
 @media screen and (max-width: 1046px) {
+    .produtos{
+        justify-content: space-around;
+    }
+    
     .produto {
         width: 330px;
     }

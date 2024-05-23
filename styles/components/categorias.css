@@ -6,7 +6,8 @@
     margin-bottom: 50px;
 }
 
-.busque__por__categoria, .container {
+.busque__por__categoria,
+.container {
     margin-bottom: 80px;
 }
 
@@ -28,6 +29,13 @@
 @media screen and (max-width: 1046px) {
     .categorias {
         justify-content: space-around;
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .categorias {
+        max-width: auto;
     }
 }
 
@@ -38,9 +46,23 @@
     height: 192px;
 }
 
+@media screen and (max-width: 1046px) {
+    .categoria__produtos {
+        width: 211.2px;
+        height: 256px;
+    }
+}
+
 .categoria__produtos img {
     height: 157px;
     width: 160px;
+}
+
+@media screen and (max-width: 1046px) {
+    .categoria__produtos img {
+        width: 211.2px;
+        height: 221px;
+    }
 }
 
 .categoria__titulo {
