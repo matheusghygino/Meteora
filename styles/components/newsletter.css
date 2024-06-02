@@ -84,3 +84,10 @@
 .modal .content p {
     padding: 10px 15px;
 }
+
+@media screen and (max-width: 550px) {
+    .newsletter__container form {
+        display: flex;
+        width: 90%;
+    }
+}
