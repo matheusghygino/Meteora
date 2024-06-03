@@ -13,7 +13,7 @@ export const enviarNews = newsForm.addEventListener('submit', (e) => {
     }
 });
 
-const mudarModal = () => {
+export const mudarModal = () => {
     const modal = document.querySelector('.modal');
     const estiloAtual = modal.style.display;
     if(estiloAtual == 'block') {
