@@ -51,6 +51,24 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.m-n-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.m-n-img-fechar {
+    height: 16px;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.m-n-h-img {
+    justify-content: flex-end;
+}
+
 .modal .content {
     background-color: #fff;
     margin: 15% auto;
