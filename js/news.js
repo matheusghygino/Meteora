@@ -1,6 +1,6 @@
 const newsForm = document.getElementById('news-form');
 const newsInput = document.getElementById('news-input');
-const fecharModal = document.getElementById('modal-header-img-fechar')
+const fecharModal = document.getElementById('modal-news-img-fechar')
 
 fecharModal.addEventListener('click', () => {
     mudarModal();

@@ -1,3 +1,9 @@
+const fecharModal = document.getElementById('modal-produtos-img-fechar');
+
+fecharModal.addEventListener('click', () => {
+    mudarModalProduto();
+})
+
 document.body.onclick = function (e) {
     if(~Array.from(e.target.classList).indexOf("btn-produtos")) {
         
