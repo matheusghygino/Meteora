@@ -1,5 +1,10 @@
 const newsForm = document.getElementById('news-form');
 const newsInput = document.getElementById('news-input');
+const fecharModal = document.getElementById('modal-header-img-fechar')
+
+fecharModal.addEventListener('click', () => {
+    mudarModal();
+})
 
 export const enviarNews = newsForm.addEventListener('submit', (e) => {
     e.preventDefault();
