@@ -11,7 +11,7 @@ document.body.onclick = function (e) {
     }
 }
 
-export function ativarModal(e) {
+export function ativarModal() {
     mudarModalProduto()
     window.onclick = function(e) {
         const modal = document.querySelector('.modal-produtos');
