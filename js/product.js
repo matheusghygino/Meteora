@@ -30,3 +30,7 @@ export const mudarModalProduto = () => {
         modal.style.display = 'block';
     }
 }
+
+export function carregarProdutos {
+    
+}
